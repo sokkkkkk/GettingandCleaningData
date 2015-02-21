@@ -56,7 +56,7 @@ myData<-merge(myData,myLabels,by="activity.id",all.x = TRUE)
 message("Labeled the data set with desriptive activity names")
 
 #  calculate average of each variable for each activity and each subject
-myOutput<-ddply(melt(myData,id.vars = c("subject","activity")), .(subject,activity), summarise, MeanSamples = mean(value))
+myOutput<-ddply(melt(myData,id.vars = c("subject","activity")), .(subject,activity), summarise, Mean = mean(value))
 message("Created myOutput which is a 2nd, independent tidy data set with the average of each variable for each activity and each subject")
 
 # save to file
