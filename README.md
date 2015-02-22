@@ -1,6 +1,7 @@
 # Getting and Cleaning Data 
 ## Overview
-The goal of run_analysis.R script listing as follows
+The goal of run_analysis.R script listing as follows.
+
 1. Merged the training and the test sets to create one data set
 2. Extracted only the measurements on the mean and standard deviation for each measurement 
 3. Named the activities in the data set with descriptive activity names
