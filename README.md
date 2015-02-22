@@ -1,8 +1,8 @@
 # Getting and Cleaning Data 
 ## Overview
-The run_analysis.R script under the this repo will clean and reshape data in following ways
-1. Merged the training and the test sets to create one data set.
-2. Extracted only the measurements on the mean and standard deviation for each measurement. 
+The goal of run_analysis.R script listing as follows
+1. Merged the training and the test sets to create one data set
+2. Extracted only the measurements on the mean and standard deviation for each measurement 
 3. Named the activities in the data set with descriptive activity names
 4. Label the variable names with descriptive names
 5. Created an independent tidy data set with the average of each variable for each activity and each subject
