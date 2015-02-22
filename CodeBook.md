@@ -11,6 +11,7 @@ The data downloaded from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojec
 Only measurements on the mean and standard deviation for each measurement were used 
 
 ## ID fields in output file
+All units are same as the original data set.
 * subject - an ID for who performed the activity 
 * activity - activity name
 * Mean - average of each subject+activity's measurements 
