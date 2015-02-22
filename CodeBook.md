@@ -15,6 +15,8 @@ All units are same as the original data set.
 
 ## Features used in the analysis 
 
+|Features|
+-----------
 |tBodyAcc-mean()-X|
 |tBodyAcc-mean()-Y|
 |tBodyAcc-mean()-Z|
