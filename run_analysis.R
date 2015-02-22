@@ -7,7 +7,7 @@ library(reshape)
 ##      for each measurement
 ## 3.   Uses descriptive activity names to name the activities 
 ##      in the data set
-## 4.   Appropriately labels the data set with desriptive activity names
+## 4.   Appropriately labels the data set with desriptive variable names
 ## 5.   Creates a second, independent tidy data set with the average 
 ##      of each variable for each activity and each subject
 
@@ -54,6 +54,10 @@ colnames(myLabels)<-c("activity.id","activity")
 # merge data based on activity id
 myData<-merge(myData,myLabels,by="activity.id",all.x = TRUE)
 message("Labeled the data set with desriptive activity names")
+
+# labels the data set with desriptive variable names
+colnames(myData)<-c("activity.id","subject",myFeatures[grep("mean\\(\\)|std\\(\\)",myFeatures$name),"name"],"activity")
+message("Labeled the data set with desriptive variable names")
 
 #  calculate average of each variable for each activity and each subject
 myOutput<-ddply(melt(myData,id.vars = c("subject","activity")), .(subject,activity), summarise, Mean = mean(value))
